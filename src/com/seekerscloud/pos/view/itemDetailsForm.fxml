@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="itemDetailsContext" prefHeight="712.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.seekerscloud.pos.controller.ItemDetailsFormController">
+   <children>
+      <TableView fx:id="tblItems" layoutX="16.0" layoutY="128.0" prefHeight="567.0" prefWidth="1087.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="327.0" text="Item Code" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="281.0" text="Unit Price" />
+            <TableColumn fx:id="colQTY" prefWidth="213.0" text="QTY" />
+            <TableColumn fx:id="colTotal" prefWidth="265.0" text="Total" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="20.0" onAction="#backToHomeOnAction" prefHeight="31.0" prefWidth="152.0" style="-fx-background-color: #34495e;" text="Back To Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="314.0" layoutY="15.0" text="Item Details Form" textFill="#34495e">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
